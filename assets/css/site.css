@@ -623,6 +623,6 @@ select,.field input{width:100%;height:50px;padding:0 14px;border:1px solid #8C93
   .contact-grid{grid-template-columns:1fr}
 }
 @media (max-width:430px){.supports ul{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:560px){h1:not(.slogan),h2,h3{hyphens:auto}}
+@media (max-width:560px){h1,h2,h3{hyphens:manual;overflow-wrap:break-word}.legal h1{font-size:clamp(1.5rem,7.4vw,2.2rem)}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 @media print{.util,.head,.foot,.sticky-buy,.cookie,dialog{display:none!important}}
