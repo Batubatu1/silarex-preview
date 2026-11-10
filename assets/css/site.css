@@ -569,8 +569,15 @@ select,.field input{width:100%;height:50px;padding:0 14px;border:1px solid #8C93
   .head{height:60px;gap:12px}
   .head-nav{display:none}
   .head-cart-l{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-  .hero{grid-template-columns:1fr;min-height:0}
-  .hero-copy{padding-block:30px 26px;gap:16px}
+  .hero{display:flex;flex-direction:column;min-height:0}
+  /* keurmerken onder de drie producten: de kopkolom valt weg zodat de volgorde per blok kan */
+  .hero-copy{display:contents}
+  .hero-copy>*{margin-inline:var(--pad)}
+  .slogan{margin-top:30px}
+  .hero-sub{margin-top:16px}
+  .hero-cta{margin-block:16px 26px}
+  .hero-shelf{order:1}
+  .hero-badges{order:2;margin-top:0;padding-block:22px 4px;border-top:0}
   .slogan{font-size:clamp(2.7rem,12.5vw,4.4rem)}
   .hero-shelf{height:clamp(330px,88vw,520px)}
   .shelf{padding:12px 10px}
